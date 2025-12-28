@@ -76,11 +76,11 @@ export default function Home() {
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
 
-  // Auto-swipe every 7 seconds
+  // Auto-swipe every 15 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 7000);
+    }, 15000);
     return () => clearInterval(interval);
   }, []);
 
