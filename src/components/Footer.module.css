@@ -1,0 +1,250 @@
+.footer {
+  background-color: #000000;
+  backdrop-filter: blur(10px);
+  color: #ffffff;
+  padding: 3rem 2rem;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Source Sans 3', sans-serif;
+}
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(to right, #DAA520, #ffffff, #000000, #DAA520);
+  background-size: 300% 100%;
+  animation: gradientMove 5s linear infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+ .footerContent {
+ display: flex;
+ justify-content: space-between;
+ max-width: 1200px;
+ margin: 0 auto;
+ flex-wrap: wrap;
+ }
+ .logoColumn {
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ flex: 1;
+ min-width: 250px;
+ margin-bottom: 2rem;
+ }
+ .logo {
+ width: 270px;
+ height: auto;
+ margin-bottom: 2rem;
+ transition: transform 0.3s ease;
+ }
+ .logo:hover {
+ transform: scale(1.05);
+ }
+ .followUs h3 {
+ font-size: 1rem;
+ margin-bottom: 1rem;
+ position: relative;
+ padding-bottom: 0.5rem;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ }
+ .followUs h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #DAA520;
+  transition: width 0.3s ease;
+}
+.followUs:hover h3::after {
+  width: 70px;
+}
+.socialIcons {
+  display: flex;
+  gap: 1rem;
+}
+.socialIcon {
+  font-size: 1.4rem;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+ .siteMap, .contact {
+ flex: 1;
+ min-width: 200px;
+ margin-bottom: 1rem;
+ }
+ .siteMap h3, .contact h3 {
+ font-size: 1.1rem;
+ margin-bottom: 1rem;
+ position: relative;
+ padding-bottom: 0.5rem;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ }
+ .siteMap h3::after, .contact h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #DAA520;
+  transition: width 0.3s ease;
+}
+.siteMap:hover h3::after, .contact:hover h3::after {
+  width: 70px;
+}
+.siteMap ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.siteMap li {
+  margin-bottom: 0.75rem;
+}
+.siteMap a, .contact p {
+  color: #9D9D9D;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+.siteMap a:hover, .contact p:hover {
+  color: #DAA520;
+  transform: translateX(5px);
+}
+.contact p {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+.contact p svg {
+  font-size: 1.1rem;
+  color: white;
+  transition: transform 0.3s ease;
+}
+.contact p:hover svg {
+  color: #DAA520;
+  transform: scale(1.1);
+}
+ .copyright {
+ text-align: center;
+ margin-top: 0rem;
+ padding-top: 2rem;
+ border-top: 1px solid rgba(255, 255, 255, 0.1);
+ font-size: 0.9rem;
+ opacity: 0.8;
+ }
+ .developerLink {
+  color: #DAA520;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.developerLink:hover {
+  color: #ffffff;
+}
+ @media (max-width: 900px) {
+  .footer {
+    padding: 1.5rem 1rem;
+  }
+
+  .footerContent {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .footer::before {
+    height: 1px;
+  }
+
+  .logoColumn {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    min-width: auto;
+  }
+
+  .logo {
+    width: 150px;
+    margin-bottom: 1rem;
+  }
+
+  .followUs h3 {
+    font-size: 0.8rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .followUs h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .socialIcons {
+    justify-content: center;
+    gap: 0.75rem;
+  }
+
+  .socialIcon {
+    font-size: 1.1rem;
+  }
+
+  .siteMap {
+    display: none;
+  }
+
+  .contact {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    min-width: auto;
+    margin-bottom: 0;
+  }
+
+  .contact h3 {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .contact h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .contact p {
+    margin-bottom: 0.25rem;
+    font-size: 0.8rem;
+  }
+
+  .contact p svg {
+    font-size: 0.75rem;
+  }
+
+  .copyright {
+    padding-top: 1rem;
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  .copyright p {
+    margin: 0.25rem 0;
+  }
+ }

@@ -1,0 +1,100 @@
+.ourClients {
+  background-color: #000000;
+  padding: 4rem 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ourClients h2 {
+  font-family: 'Source Serif 4', serif;
+  color: #ffffff;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.clientGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.clientTile {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 180px;
+}
+
+.logoWrapper {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.clientLogo {
+  max-width: 100%;
+  max-height: 80px;
+  object-fit: contain;
+}
+
+.clientName {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgb(25, 25, 25);
+  margin-top: auto;
+}
+
+@media (max-width: 900px) {
+  .clientGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .ourClients h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .clientGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .ourClients {
+    padding: 3rem 1rem;
+  }
+  
+  .ourClients h2 {
+    font-size: 1.8rem;
+  }
+  
+  .clientTile {
+    padding: 1rem;
+    min-height: 120px;
+  }
+  
+  .clientLogo {
+    max-height: 60px;
+  }
+  
+  .clientName {
+    font-size: 0.8rem;
+  }
+}

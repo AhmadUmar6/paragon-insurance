@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400&display=swap');
+
+.container {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* --- Hero Section --- */
+.heroSection {
+  position: relative;
+  background-color: rgba(218, 165, 32, 0.1);
+  min-height: 600px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0;
+}
+
+.slideContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0 0 4rem;
+  gap: 2rem;
+  height: 100%;
+  position: relative;
+}
+
+.textSide {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+  padding-bottom: 4rem;
+}
+
+.textContentWrapper {
+  max-width: 600px;
+}
+
+.slideTitle {
+  font-family: 'Source Serif 4', serif;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 400;
+  color: rgb(25, 25, 25);
+  margin-bottom: 1.5rem;
+}
+
+.slideDescription {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+  color: rgb(25, 25, 25);
+  margin-bottom: 2.5rem;
+  max-width: 500px;
+}
+
+.imageSide {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+  height: 100%;
+  min-height: 500px;
+}
+
+.imageWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.blobShape {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+  margin-bottom: 0;
+  margin-right: 0;
+  border-radius: 200px 0 0 0;
+}
+
+/* Buttons */
+.buttonContainer {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.primaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #000000 50%, #DAA520 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  border: none;
+  color: #000000;
+  padding: 0.9rem 2rem;
+  border-radius: 50px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-position 0.3s ease, transform 0.3s ease, color 0.3s ease;
+  gap: 0.5rem;
+}
+
+.primaryButton:hover {
+  background-position: left bottom;
+  transform: translateY(-2px);
+  color: #ffffff;
+}
+
+.secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #000000 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  border: 2px solid #000000;
+  color: #000000;
+  padding: 0.9rem 2rem;
+  border-radius: 50px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-position 0.3s ease, transform 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.secondaryButton:hover {
+  background-position: left bottom;
+  transform: translateY(-2px);
+  border-color: #000000;
+  color: #ffffff;
+}
+
+/* Indicators */
+.indicators {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+  z-index: 10;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #d0d0d0;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.activeIndicator {
+  background: #000000;
+  transform: scale(1.3);
+}
+
+/* --- Contact Section Wrapper --- */
+.contactSection {
+  position: relative;
+  width: 100%;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  padding: 5rem 2rem;
+}
+
+/* --- Stats Bar Section --- */
+.statsBar {
+  width: 100%;
+  background-color: rgba(218, 165, 32, 0.1);
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 5;
+}
+
+.statsWrapper {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.metricsGroup {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.statNumber {
+  font-family: 'Source Serif 4', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #000000;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.statLabel {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.7);
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.statDivider {
+  width: 1px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.trustGroup {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.trustBadge {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.trustIcon {
+  font-size: 2rem;
+}
+
+.trustDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+  color: #000000;
+  font-size: 0.75rem;
+  margin-bottom: 2px;
+}
+
+.trustLabel {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+  .heroSection {
+    min-height: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slideContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+    gap: 0;
+    width: 100%;
+  }
+
+  .imageSide {
+    width: 100%;
+    height: 45vh;
+    min-height: 280px;
+    max-height: 400px;
+    flex: none;
+  }
+
+  .imageWrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .blobShape {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    position: relative;
+  }
+
+  .textSide {
+    padding: 2rem 1.5rem 1.5rem;
+    align-items: center;
+    text-align: center;
+    flex: none;
+  }
+
+  .textContentWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slideTitle {
+    font-size: 1.75rem;
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+  }
+
+  .slideDescription {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+  }
+
+  .buttonContainer {
+    width: 100%;
+  }
+
+  .primaryButton {
+    width: 100%;
+    justify-content: center;
+    padding: 0.9rem 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .secondaryButton {
+    display: none;
+  }
+
+  .indicators {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem 0 2rem;
+  }
+
+  .indicator {
+    width: 8px;
+    height: 8px;
+  }
+
+  /* Stats Bar */
+  .statsBar {
+    padding: 1rem;
+  }
+
+  .statsWrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .statDivider {
+    display: none;
+  }
+
+  .metricsGroup {
+    flex-direction: row;
+    gap: 1.25rem;
+    justify-content: center;
+  }
+
+  .statItem {
+    flex: none;
+    min-width: auto;
+  }
+
+  .statNumber {
+    font-size: 1.1rem;
+  }
+
+  .statLabel {
+    font-size: 0.6rem;
+  }
+
+  .trustGroup {
+    justify-content: center;
+  }
+
+  .trustBadge {
+    gap: 0.4rem;
+  }
+
+  .trustIcon {
+    font-size: 1.25rem !important;
+  }
+
+  .trustDetails .stars svg {
+    font-size: 0.6rem;
+  }
+
+  .trustLabel {
+    font-size: 0.55rem;
+  }
+
+  /* Contact Section */
+  .contactSection {
+    padding: 3rem 1.5rem;
+  }
+}

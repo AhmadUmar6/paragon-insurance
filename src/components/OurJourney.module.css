@@ -1,0 +1,109 @@
+.container {
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(218, 165, 32, 0.1);
+  position: relative;
+  width: 100%;
+}
+
+
+.ourJourney {
+  padding: 3rem 2rem;
+  width: 100%;
+  text-align: center;
+  max-width: 1200px;
+}
+
+.ourJourney h2 {
+  font-family: 'Source Serif 4', serif;
+  color: rgb(25, 25, 25);
+  margin-bottom: 2rem;
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+.ourJourney p {
+  font-family: 'Source Sans 3', sans-serif;
+  color: rgb(50, 50, 50);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.ctaButton {
+  display: inline-block;
+  margin-top: 1rem;
+  background: linear-gradient(to right, #000000 50%, #DAA520 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  color: #000000;
+  padding: 0.9rem 2rem;
+  border-radius: 50px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-position 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-position: left bottom;
+  transform: translateY(-2px);
+  color: #ffffff;
+}
+
+@media (min-width: 560px) and (max-width: 800px) {
+  .navTiles {
+    flex-direction: column;
+    align-items: center; 
+    gap: 0.5rem;
+  }
+
+  .navTiles button {
+    width: 60%;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .ourJourney {
+    padding: 2rem;
+  }
+
+  .ourJourney h2 {
+    font-size: 2rem;
+  }
+
+  .ourJourney p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .navTiles {
+    flex-direction: column;
+    align-items: center; 
+    gap: 0.5rem;
+  }
+
+  .navTiles button {
+    width: 70%;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .ourJourney {
+    padding: 2rem 1rem;
+  }
+
+  .ourJourney h2 {
+    font-size: 1.8rem;
+  }
+
+  .ourJourney p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+}

@@ -1,0 +1,152 @@
+.mapsWrapper {
+  width: 100%;
+  background-color: #000000;
+  padding: 3rem 2rem;
+}
+
+.mapsContainer {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  min-height: 400px;
+}
+
+.textSide {
+  flex: 1;
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #000000;
+}
+
+.title {
+  font-family: 'Source Serif 4', serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 2rem;
+}
+
+
+.directionsBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #ffffff 50%, #DAA520 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  color: #000000;
+  padding: 0.9rem 2rem;
+  border-radius: 50px;
+  border: none;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-position 0.3s ease, transform 0.3s ease;
+  width: fit-content;
+}
+
+.directionsBtn:hover {
+  background-position: left bottom;
+  transform: translateY(-2px);
+}
+
+.mapSide {
+  flex: 1.2;
+  min-height: 400px;
+}
+
+.iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* Light Mode (for contact page) */
+.lightMode {
+  background-color: transparent;
+  padding: 0;
+}
+
+.lightMode .mapsContainer {
+  padding: 3rem 0;
+}
+
+.lightMode .textSide {
+  background-color: transparent;
+}
+
+.lightMode .title {
+  color: rgb(25, 25, 25);
+}
+
+.lightMode .description {
+  color: rgb(100, 100, 100);
+}
+
+.lightMode .directionsBtn {
+  background: linear-gradient(to right, #000000 50%, #DAA520 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  color: #000000;
+}
+
+.lightMode .directionsBtn:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 900px) {
+  .mapsWrapper {
+    padding: 1.5rem;
+  }
+
+  .mapsContainer {
+    flex-direction: column;
+    min-height: auto;
+    gap: 1rem;
+  }
+
+  .textSide {
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    order: 2;
+  }
+
+  .title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    display: none;
+  }
+
+  .description {
+    display: none;
+  }
+
+  .directionsBtn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .mapSide {
+    min-height: 220px;
+    border-radius: 0;
+    overflow: hidden;
+    order: 1;
+  }
+
+  .lightMode .mapsContainer {
+    padding: 0;
+  }
+}

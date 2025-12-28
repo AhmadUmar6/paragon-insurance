@@ -1,0 +1,301 @@
+.page {
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.hero {
+  padding: 5rem 2rem 3rem;
+  text-align: center;
+  background-color: rgba(218, 165, 32, 0.1);
+}
+
+.heroTitle {
+  font-family: 'Source Serif 4', serif;
+  font-size: 3rem;
+  font-weight: 400;
+  color: rgb(25, 25, 25);
+  margin-bottom: 1rem;
+}
+
+.heroSubtitle {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 1.15rem;
+  color: rgb(100, 100, 100);
+  max-width: 550px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.6;
+}
+
+.lastUpdated {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.9rem;
+  color: rgb(150, 150, 150);
+}
+
+/* Introduction */
+.intro {
+  padding: 3rem 2rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.introContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.introContent p {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 1.05rem;
+  color: rgb(60, 60, 60);
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+.introContent p:last-child {
+  margin-bottom: 0;
+}
+
+/* Table of Contents */
+.toc {
+  padding: 2.5rem 2rem;
+  background-color: rgb(250, 250, 250);
+}
+
+.tocTitle {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: rgb(150, 150, 150);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.tocNav {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.tocLink {
+  padding: 0.6rem 1.25rem;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgb(50, 50, 50);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tocLink:hover {
+  background-color: rgb(25, 25, 25);
+  border-color: rgb(25, 25, 25);
+  color: #ffffff;
+}
+
+/* Main Content */
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.section {
+  margin-bottom: 4rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.section:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.sectionNumber {
+  font-family: 'Source Serif 4', serif;
+  font-size: 3rem;
+  font-weight: 400;
+  color: rgba(218, 165, 32, 0.3);
+  margin-bottom: 0.5rem;
+}
+
+.sectionTitle {
+  font-family: 'Source Serif 4', serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: rgb(25, 25, 25);
+  margin-bottom: 2rem;
+}
+
+.sectionContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.subsection {
+  padding-left: 1.5rem;
+  border-left: 2px solid rgba(218, 165, 32, 0.4);
+}
+
+.subsectionTitle {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgb(25, 25, 25);
+  margin-bottom: 0.75rem;
+}
+
+.subsectionText {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 1rem;
+  color: rgb(80, 80, 80);
+  line-height: 1.75;
+}
+
+/* Contact Section */
+.contact {
+  padding: 4rem 2rem;
+  background-color: #000000;
+  text-align: center;
+}
+
+.contactTitle {
+  font-family: 'Source Serif 4', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+}
+
+.contactText {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 2.5rem;
+}
+
+.contactInfo {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.contactItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.contactLabel {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.contactValue {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    padding: 4rem 1.5rem 2.5rem;
+  }
+
+  .heroTitle {
+    font-size: 2.2rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+
+  .intro {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .introContent p {
+    font-size: 1rem;
+  }
+
+  .toc {
+    padding: 2rem 1.5rem;
+  }
+
+  .tocNav {
+    gap: 0.5rem;
+  }
+
+  .tocLink {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .content {
+    padding: 3rem 1.5rem;
+  }
+
+  .section {
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .sectionNumber {
+    font-size: 2.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .sectionContent {
+    gap: 1.5rem;
+  }
+
+  .subsection {
+    padding-left: 1rem;
+  }
+
+  .subsectionTitle {
+    font-size: 1rem;
+  }
+
+  .subsectionText {
+    font-size: 0.95rem;
+  }
+
+  .contact {
+    padding: 3rem 1.5rem;
+  }
+
+  .contactTitle {
+    font-size: 1.7rem;
+  }
+
+  .contactInfo {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+

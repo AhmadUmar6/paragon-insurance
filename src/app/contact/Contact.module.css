@@ -1,0 +1,18 @@
+.contactPage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.formSection {
+  width: 100%;
+  background-color: rgba(218, 165, 32, 0.1);
+  padding: 5rem 2rem;
+}
+
+
+@media (max-width: 768px) {
+  .formSection {
+    padding: 3rem 1.5rem;
+  }
+}
