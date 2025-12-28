@@ -52,7 +52,7 @@
 }
 
 .activeTab {
-  background: linear-gradient(to right, #000000 50%, #DAA520 50%);
+  background: linear-gradient(to right, #1a1a1a 50%, #DAA520 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   color: #000000;
@@ -82,11 +82,11 @@
 
 /* Left Column */
 .leftColumn {
-  position: relative;
-}
-
+    position: relative;
+  }
+  
 .imageWrapper {
-  position: relative;
+    position: relative;
   height: 380px;
   border-radius: 16px;
   overflow: hidden;
@@ -192,7 +192,7 @@
 }
 
 .details > p {
-  overflow: hidden;
+    overflow: hidden;
   margin: 0;
   font-family: 'Source Sans 3', sans-serif;
   font-size: 0.95rem;
@@ -202,8 +202,8 @@
   padding: 0;
   border-radius: 8px;
   border-left: 3px solid #DAA520;
-}
-
+  }
+  
 .detailsOpen {
   grid-template-rows: 1fr;
 }
@@ -259,7 +259,7 @@
     max-width: 260px;
     padding: 0.85rem 1.5rem;
   }
-
+  
   .serviceSection {
     padding: 2.5rem 1.5rem 3rem;
   }
@@ -297,5 +297,6 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
+    }
   }
-}
+  

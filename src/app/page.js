@@ -47,9 +47,9 @@ const StatsBar = () => {
                     {stats.map((stat, index) => (
                         <React.Fragment key={index}>
                             <div className={styles.statItem}>
-                                <h3 className={styles.statNumber}>{stat.number}</h3>
-                                <p className={styles.statLabel}>{stat.label}</p>
-                            </div>
+                            <h3 className={styles.statNumber}>{stat.number}</h3>
+                            <p className={styles.statLabel}>{stat.label}</p>
+                        </div>
                             {index < stats.length - 1 && <div className={styles.statDivider}></div>}
                         </React.Fragment>
                     ))}

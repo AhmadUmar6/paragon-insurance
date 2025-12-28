@@ -82,7 +82,7 @@ export default function FAQs() {
                       strokeLinecap="round"
                     />
                   </svg>
-                </div>
+              </div>
               </button>
               <div className={styles.faqAnswer}>
                 <p>{faq.answer}</p>

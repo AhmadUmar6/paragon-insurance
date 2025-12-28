@@ -1,5 +1,5 @@
 .header {
-  background-color: #000000;
+  background-color: #1a1a1a;
   backdrop-filter: blur(10px);
   color: #ffffff;
   display: flex;
@@ -33,7 +33,7 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: linear-gradient(to right, #DAA520, #ffffff, #000000, #DAA520);
+  background: linear-gradient(to right, #DAA520, #ffffff, #1a1a1a, #DAA520);
   background-size: 300% 100%;
   animation: gradientMove 5s linear infinite;
 }
@@ -206,7 +206,7 @@
   display: none;
   flex-direction: column;
   align-items: center;
-  background-color: #000000;
+  background-color: #1a1a1a;
   width: 100%;
   position: absolute;
   top: 100%;

@@ -1,5 +1,5 @@
 .footer {
-  background-color: #000000;
+  background-color: #1a1a1a;
   backdrop-filter: blur(10px);
   color: #ffffff;
   padding: 3rem 2rem;
@@ -14,7 +14,7 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: linear-gradient(to right, #DAA520, #ffffff, #000000, #DAA520);
+  background: linear-gradient(to right, #DAA520, #ffffff, #1a1a1a, #DAA520);
   background-size: 300% 100%;
   animation: gradientMove 5s linear infinite;
 }
@@ -161,20 +161,20 @@
     padding: 1.5rem 1rem;
   }
 
-  .footerContent {
-    flex-direction: column;
-    align-items: center;
+ .footerContent {
+ flex-direction: column;
+ align-items: center;
     gap: 1rem;
   }
 
   .footer::before {
-    height: 1px;
+ height: 1px;
   }
 
   .logoColumn {
-    width: 100%;
-    text-align: center;
-    align-items: center;
+ width: 100%;
+ text-align: center;
+ align-items: center;
     margin-bottom: 0.5rem;
     min-width: auto;
   }
@@ -190,12 +190,12 @@
   }
 
   .followUs h3::after {
-    left: 50%;
-    transform: translateX(-50%);
+ left: 50%;
+ transform: translateX(-50%);
   }
 
-  .socialIcons {
-    justify-content: center;
+ .socialIcons {
+ justify-content: center;
     gap: 0.75rem;
   }
 
@@ -207,12 +207,12 @@
     display: none;
   }
 
-  .contact {
+ .contact {
     width: 100%;
     text-align: center;
     align-items: center;
-    display: flex;
-    flex-direction: column;
+ display: flex;
+ flex-direction: column;
     gap: 0.5rem;
     font-size: 0.8rem;
     min-width: auto;
@@ -234,7 +234,7 @@
     font-size: 0.8rem;
   }
 
-  .contact p svg {
+ .contact p svg {
     font-size: 0.75rem;
   }
 

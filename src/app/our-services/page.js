@@ -100,13 +100,13 @@ export default function OurServices() {
           {/* Left - Image & Title */}
           <div className={styles.leftColumn}>
             <div className={styles.imageWrapper}>
-              <Image
+        <Image
                 src={currentImage}
                 alt={currentTitle}
                 fill
                 style={{ objectFit: 'cover' }}
-              />
-            </div>
+        />
+      </div>
             <div className={styles.imageCaption}>
               <h2 className={styles.serviceTitle}>{currentTitle}</h2>
               <p className={styles.serviceTagline}>{currentTagline}</p>
@@ -146,7 +146,7 @@ export default function OurServices() {
               </div>
             ))}
           </div>
-        </div>
+      </div>
       </section>
 
       <LogoMarquee />

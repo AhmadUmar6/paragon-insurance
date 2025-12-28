@@ -67,67 +67,67 @@ export default function ContactForm({ lightMode = false }) {
 
       <div className={styles.formContainer}>
         <form className={styles.contactForm} onSubmit={handleSubmit}>
-          <div className={styles.inputGroup}>
+        <div className={styles.inputGroup}>
             <div className={styles.inputWrapper}>
               <label className={styles.inputLabel}>First Name*</label>
-              <input
-                type="text"
-                name="firstName"
-                value={formData.firstName}
-                onChange={handleChange}
-                required
-                className={styles.input}
-              />
+          <input
+            type="text"
+            name="firstName"
+            value={formData.firstName}
+            onChange={handleChange}
+            required
+            className={styles.input}
+          />
             </div>
             <div className={styles.inputWrapper}>
               <label className={styles.inputLabel}>Last Name*</label>
-              <input
-                type="text"
-                name="lastName"
-                value={formData.lastName}
-                onChange={handleChange}
-                required
-                className={styles.input}
-              />
+          <input
+            type="text"
+            name="lastName"
+            value={formData.lastName}
+            onChange={handleChange}
+            required
+            className={styles.input}
+          />
             </div>
-          </div>
-          <div className={styles.inputGroup}>
+        </div>
+        <div className={styles.inputGroup}>
             <div className={styles.inputWrapper}>
               <label className={styles.inputLabel}>Phone Number</label>
-              <input
-                type="tel"
-                name="phoneNumber"
-                value={formData.phoneNumber}
-                onChange={handleChange}
-                className={styles.input}
-              />
+          <input
+            type="tel"
+            name="phoneNumber"
+            value={formData.phoneNumber}
+            onChange={handleChange}
+            className={styles.input}
+          />
             </div>
             <div className={styles.inputWrapper}>
               <label className={styles.inputLabel}>Email Address*</label>
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                className={styles.input}
-              />
-            </div>
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+            className={styles.input}
+          />
+        </div>
           </div>
           <div className={styles.inputWrapper}>
             <label className={styles.inputLabel}>Message*</label>
-            <textarea
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              required
-              className={styles.textarea}
-            />
+        <textarea
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
+          required
+          className={styles.textarea}
+        />
           </div>
-          <button type="submit" className={styles.button}>Send Message</button>
+        <button type="submit" className={styles.button}>Send Message</button>
         </form>
 
-        {isSent && <p className={styles.successMessage}>Message sent successfully!</p>}
+      {isSent && <p className={styles.successMessage}>Message sent successfully!</p>}
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 .mapsWrapper {
   width: 100%;
-  background-color: #000000;
+  background-color: #1a1a1a;
   padding: 3rem 2rem;
 }
 
@@ -17,7 +17,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #000000;
+  background-color: #1a1a1a;
 }
 
 .title {
@@ -96,20 +96,22 @@
 }
 
 .lightMode .directionsBtn {
-  background: linear-gradient(to right, #000000 50%, #DAA520 50%);
+  background: linear-gradient(to right, #1a1a1a 50%, #DAA520 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   color: #000000;
 }
 
 .lightMode .directionsBtn:hover {
+  background-position: left bottom;
+  transform: translateY(-2px);
   color: #ffffff;
 }
 
 @media (max-width: 900px) {
   .mapsWrapper {
     padding: 1.5rem;
-  }
+}
 
   .mapsContainer {
     flex-direction: column;
@@ -119,7 +121,7 @@
 
   .textSide {
     padding: 0;
-    text-align: center;
+  text-align: center;
     align-items: center;
     order: 2;
   }
@@ -128,16 +130,16 @@
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
     display: none;
-  }
+}
 
   .description {
     display: none;
-  }
+}
 
   .directionsBtn {
     padding: 0.75rem 1.5rem;
     font-size: 0.9rem;
-  }
+}
 
   .mapSide {
     min-height: 220px;
