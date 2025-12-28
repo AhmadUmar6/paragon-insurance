@@ -7,7 +7,7 @@ export default function OurClients() {
     { name: 'Attune Insurance', logo: '/attune.png' },
     { name: 'CNA Financial', logo: '/cna.png' },
     { name: 'Elephant Insurance', logo: '/elephant.png' },
-    { name: 'Liberty Mutual', logo: '/liberty.png' },
+    { name: 'Liberty Mutual', logo: '/liberty2.png' },
     { name: 'NEXT Insurance', logo: '/next.png' },
     { name: 'Progressive Insurance', logo: '/progressive.png' },
     { name: 'Texas Mutual', logo: '/texas.png' },
