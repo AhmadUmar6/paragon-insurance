@@ -49,7 +49,7 @@ const commercialServices = [
 ];
 
 export default function OurServices() {
-  const [activeTab, setActiveTab] = useState('personal');
+  const [activeTab, setActiveTab] = useState('commercial');
   const [expandedIndex, setExpandedIndex] = useState(null);
 
   const currentServices = activeTab === 'personal' ? personalServices : commercialServices;
@@ -80,16 +80,16 @@ export default function OurServices() {
         {/* Tab Buttons */}
         <div className={styles.tabContainer}>
           <button 
-            className={`${styles.tabButton} ${activeTab === 'personal' ? styles.activeTab : ''}`}
-            onClick={() => handleTabChange('personal')}
-          >
-            Personal Insurance
-          </button>
-          <button 
             className={`${styles.tabButton} ${activeTab === 'commercial' ? styles.activeTab : ''}`}
             onClick={() => handleTabChange('commercial')}
           >
             Commercial Insurance
+          </button>
+          <button 
+            className={`${styles.tabButton} ${activeTab === 'personal' ? styles.activeTab : ''}`}
+            onClick={() => handleTabChange('personal')}
+          >
+            Personal Insurance
           </button>
         </div>
       </section>

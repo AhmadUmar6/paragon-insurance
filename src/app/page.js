@@ -19,17 +19,17 @@ import styles from './page.module.css';
 const slides = [
   {
     id: 1,
-    title: "Personal Insurance",
-    subtitle: "Protect Your Lifestyle",
-    description: "Secure your home, vehicle, and personal assets with comprehensive coverage tailored to your unique needs. Experience true peace of mind knowing what matters most is safe.",
-    image: "/heropersonal.jpg"
-  },
-  {
-    id: 2,
     title: "Commercial Insurance",
     subtitle: "Empower Your Business",
     description: "Safeguard your enterprise with robust liability and property solutions designed for growth. Let us handle the risk so you can focus on building your business success.",
     image: "/commercial.jpg"
+  },
+  {
+    id: 2,
+    title: "Personal Insurance",
+    subtitle: "Protect Your Lifestyle",
+    description: "Secure your home, vehicle, and personal assets with comprehensive coverage tailored to your unique needs. Experience true peace of mind knowing what matters most is safe.",
+    image: "/heropersonal.jpg"
   }
 ];
 

@@ -51,7 +51,6 @@ export default function Footer() {
           <p><FontAwesomeIcon icon={faMapMarkerAlt} /> 12100 Ford Rd, Suite B308, Dallas TX 75234</p>
           <p><FontAwesomeIcon icon={faPhone} /> (469) 466 8081</p>
           <p><FontAwesomeIcon icon={faPhone} /> (469) 533-4927</p>
-          <p><FontAwesomeIcon icon={faPhone} /> (682) 433-2013</p>
           <p><FontAwesomeIcon icon={faEnvelope} /> admin@insureparagon.com</p>
         </div>
       </div>

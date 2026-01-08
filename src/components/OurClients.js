@@ -16,7 +16,7 @@ export default function OurClients() {
 
   return (
     <div className={styles.ourClients}>
-      <h2>Our Clients</h2>
+      <h2>Our Partners</h2>
       <div className={styles.clientGrid}>
         {clients.map((client, index) => (
           <div className={styles.clientTile} key={index}>
