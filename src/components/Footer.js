@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faPhone, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import { FaArrowRight } from 'react-icons/fa';
 import styles from './Footer.module.css';
 
 export default function Footer() {
@@ -52,6 +53,21 @@ export default function Footer() {
           <p><FontAwesomeIcon icon={faPhone} /> (469) 466 8081</p>
           <p><FontAwesomeIcon icon={faPhone} /> (469) 533-4927</p>
           <p><FontAwesomeIcon icon={faEnvelope} /> admin@insureparagon.com</p>
+          
+          <div className={styles.callback}>
+            <h4>REQUEST A CALLBACK</h4>
+            <form className={styles.callbackForm} onSubmit={(e) => e.preventDefault()}>
+              <input 
+                type="tel" 
+                placeholder="Enter your phone" 
+                className={styles.callbackInput}
+                required
+              />
+              <button type="submit" className={styles.callbackBtn}>
+                <FaArrowRight />
+              </button>
+            </form>
+          </div>
         </div>
       </div>
       <div className={styles.copyright}>
