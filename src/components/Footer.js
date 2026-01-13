@@ -104,7 +104,7 @@ export default function Footer() {
       </div>
       <div className={styles.copyright}>
         <p>&copy; {currentYear ? currentYear : 'Loading...'} Paragon Insurance. All rights reserved.</p>
-        <p>Developed by: <a href="https://ahmadumar.space" target="_blank" rel="noopener noreferrer" className={styles.developerLink}>AUF Devs</a></p>
+        <p>Developed by: <a href="https://ahmad-umar.vercel.app" target="_blank" rel="noopener noreferrer" className={styles.developerLink}>AUF Devs</a></p>
       </div>
     </footer>
   );
