@@ -6,14 +6,39 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faPhone, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { FaArrowRight } from 'react-icons/fa';
+import emailjs from 'emailjs-com';
 import styles from './Footer.module.css';
 
 export default function Footer() {
   const [currentYear, setCurrentYear] = useState(null);
+  const [phoneNumber, setPhoneNumber] = useState('');
+  const [callbackSent, setCallbackSent] = useState(false);
+  const [callbackError, setCallbackError] = useState(false);
 
   useEffect(() => {
     setCurrentYear(new Date().getFullYear());
   }, []);
+
+  const handleCallbackSubmit = (e) => {
+    e.preventDefault();
+    
+    const serviceID = 'service_yl3tpty';
+    const templateID = 'template_5txnbn3';
+    const publicKey = 'dMmVU9tKLRojNhgZX';
+
+    emailjs.send(serviceID, templateID, { phoneNumber }, publicKey)
+      .then((response) => {
+        console.log('Callback request sent!', response.status);
+        setCallbackSent(true);
+        setPhoneNumber('');
+        setTimeout(() => setCallbackSent(false), 3000);
+      })
+      .catch((error) => {
+        console.log('Callback failed...', error);
+        setCallbackError(true);
+        setTimeout(() => setCallbackError(false), 3000);
+      });
+  };
 
   return (
     <footer className={styles.footer}>
@@ -56,17 +81,24 @@ export default function Footer() {
           
           <div className={styles.callback}>
             <h4>REQUEST A CALLBACK</h4>
-            <form className={styles.callbackForm} onSubmit={(e) => e.preventDefault()}>
-              <input 
-                type="tel" 
-                placeholder="Enter your phone" 
-                className={styles.callbackInput}
-                required
-              />
-              <button type="submit" className={styles.callbackBtn}>
-                <FaArrowRight />
-              </button>
-            </form>
+            {callbackSent ? (
+              <p className={styles.callbackSuccess}>We&apos;ll call you soon!</p>
+            ) : (
+              <form className={styles.callbackForm} onSubmit={handleCallbackSubmit}>
+                <input 
+                  type="tel" 
+                  placeholder="Enter your phone" 
+                  className={styles.callbackInput}
+                  value={phoneNumber}
+                  onChange={(e) => setPhoneNumber(e.target.value)}
+                  required
+                />
+                <button type="submit" className={styles.callbackBtn}>
+                  <FaArrowRight />
+                </button>
+              </form>
+            )}
+            {callbackError && <p className={styles.callbackError}>Failed to send. Try again.</p>}
           </div>
         </div>
       </div>

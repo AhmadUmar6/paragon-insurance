@@ -222,6 +222,19 @@
 .callbackBtn svg {
   font-size: 0.9rem;
 }
+
+.callbackSuccess {
+  color: #4ade80;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.7rem 0;
+}
+
+.callbackError {
+  color: #f87171;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
  .copyright {
  text-align: center;
  margin-top: 0rem;

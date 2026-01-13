@@ -21,11 +21,11 @@ export default function ContactForm({ lightMode = false }) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const serviceID = 'service_mh5mmto';
-    const templateID = 'template_1rsa53c';
-    const userID = 'XwCC8PSZN8_HLzYZA';
+    const serviceID = 'service_yl3tpty';
+    const templateID = 'template_te2w0r4';
+    const publicKey = 'dMmVU9tKLRojNhgZX';
 
-    emailjs.send(serviceID, templateID, formData, userID)
+    emailjs.send(serviceID, templateID, formData, publicKey)
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
         setIsSent(true);
